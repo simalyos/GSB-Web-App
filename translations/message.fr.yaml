@@ -1,0 +1,11 @@
+fr:
+  dashboard:
+    title: "Mon tableau de bord"
+    welcome_message: "Bienvenue sur mon tableau de bord !"
+  users:
+    entity_label: "Utilisateur|Utilisateurs"
+    page_title:
+      index: "Liste des utilisateurs"
+    fields:
+      username: "Nom d'utilisateur"
+      passwd: "Mot de passe"

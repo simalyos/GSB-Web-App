@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Dr. Dupont",
+      "adresse": "5 rue de la Paix, 75001 Paris",
+      "phone": "01 42 36 12 34"
+    },
+    {
+      "name": "Dr. Martin",
+      "adresse": "28 rue des Lilas, 44000 Nantes",
+      "phone": "02 40 56 78 90"
+    },
+    {
+      "name": "Dr. Blanc",
+      "adresse": "16 avenue de la Gare, 67000 Strasbourg",
+      "phone": "03 88 76 54 32"
+    },
+    {
+      "name": "Dr. Dupuis",
+      "adresse": "8 rue du Moulin, 31000 Toulouse",
+      "phone": "05 61 23 45 67"
+    },
+    {
+      "name": "Dr. Dubois",
+      "adresse": "11 rue de la Liberté, 69000 Lyon",
+      "phone": "04 78 90 12 34"
+    },
+    {
+      "name": "Dr. Lefebvre",
+      "adresse": "24 avenue des Champs-Élysées, 75008 Paris",
+      "phone": "01 53 45 67 89"
+    },
+    {
+      "name": "Dr. Martinet",
+      "adresse": "2 rue de la République, 13000 Marseille",
+      "phone": "04 91 23 45 67"
+    },
+    {
+      "name": "Dr. Durand",
+      "adresse": "9 avenue Foch, 54000 Nancy",
+      "phone": "03 83 45 67 89"
+    },
+    {
+      "name": "Dr. Moreau",
+      "adresse": "17 rue Saint-Louis, 35000 Rennes",
+      "phone": "02 99 34 56 78"
+    },
+    {
+      "name": "Dr. Rousseau",
+      "adresse": "14 boulevard de la Paix, 59000 Lille",
+      "phone": "03 20 45 67 89"
+    }
+  ]
+  

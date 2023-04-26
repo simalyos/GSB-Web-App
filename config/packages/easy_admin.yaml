@@ -1,0 +1,21 @@
+
+easy_admin:
+    # ...
+    design:
+        language: true
+        dashboard: 'admin/dashboard.html.twig'
+        menu:
+            - { label: 'lang.en', route: 'easyadmin', params: { _locale: 'en' }, icon: 'fa fa-globe' }
+            - { label: 'lang.fr', route: 'easyadmin', params: { _locale: 'fr' }, icon: 'fa fa-globe' }
+        assets:
+        css_assets:
+                # ...
+                # Si vous utilisez Sass ou Less, assurez-vous d'inclure le chemin vers votre fichier CSS généré
+        - '/build/app.css'
+        webpack_encore_assets:
+                # ...
+                # Si vous utilisez Webpack Encore, incluez le chemin vers votre fichier CSS généré
+            - '/build/app.css'
+            # Activer la fonctionnalité de changement de langue
+        js_assets:
+            - '/bundles/easyadmin/js/language-switcher.js'

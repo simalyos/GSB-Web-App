@@ -1,0 +1,50 @@
+body {
+    background-color: lightgray;
+}
+
+#dropdown {
+    margin-top: 50px;
+}
+
+#login-box {
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #ddd;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#login-box h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #337ab7;
+}
+
+#login-box .form-group {
+    margin-bottom: 20px;
+}
+
+#login-box label {
+    color: #555;
+    font-weight: bold;
+}
+
+#login-box input[type="text"],
+#login-box input[type="password"] {
+    border-radius: 0;
+}
+
+#login-box input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+#login-box .btn {
+    border-radius: 0;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+#login-box .btn:hover {
+    background-color: #2e6da4;
+    border-color: #2e6da4;
+}

@@ -1,0 +1,47 @@
+{% extends '@EasyAdmin/layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/chart.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/chart.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div id="chart-container"></div>
+
+    <script>
+        // Code to render the chart using the chart.js library
+    </script>
+{% endblock %}
+
+{% block main %}
+{# templates/admin/my-custom-page.html.twig #}
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content_title %}The Title of the Page{% endblock %}
+{% block page_actions %}
+    <a class="btn btn-primary" href="...">Some Action</a>
+{% endblock %}
+
+{% block main %}
+    <table class="datagrid">
+        <thead>
+            <tr>
+                <td>test</td>
+                <td>Another Column</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in my_own_data %}
+                <tr>
+                    <td>{{ data.someColumn }}</td>
+                    <td>{{ data.anotherColumn }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

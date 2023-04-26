@@ -1,0 +1,61 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1517841900229-3d62b4a7e0a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+  }
+  
+  .rounded {
+  border-radius: 0.5rem !important;
+  }
+  
+  .shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  }
+  
+  .px-4 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  }
+  
+  .form-control {
+  border-radius: 0.25rem !important;
+  border-color: #ced4da !important;
+  }
+  
+  .form-control:focus {
+  border-color: #6cb2eb !important;
+  box-shadow: none !important;
+  }
+  
+  .btn-block {
+  border-radius: 0.25rem !important;
+  }
+  
+  .btn-info {
+  background-color: #6cb2eb !important;
+  border-color: #6cb2eb !important;
+  }
+  
+  .btn-info:hover {
+  background-color: #5c9cd7 !important;
+  border-color: #5c9cd7 !important;
+  }
+  
+  .text-info {
+  color: #6cb2eb !important;
+  }
+  
+  .text-center {
+  text-align: center !important;
+  }
+  
+  .mb-4 {
+  margin-bottom: 1.5rem !important;
+  }

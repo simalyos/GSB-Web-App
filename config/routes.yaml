@@ -3,3 +3,45 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+app_home:
+    path: /home
+    controller: App\Controller\HomeController::index
+
+app_homepage:
+    path: /
+    controller: App\Controller\SecurityController::index
+
+app_login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+app_logout:
+    path: /logout
+
+app_clients_show:
+    path: /clients/{id_client}
+    controller: App\Controller\ClientsController::show
+    methods: GET
+
+app_clients_edit:
+    path: /clients/{id_client}/edit
+    controller: App\Controller\ClientsController::edit
+    methods: GET|POST
+
+app_clients_delete:
+    path: /clients/{id_client}
+    controller: App\Controller\ClientsController::delete
+    methods: DELETE
+
+easy_admin_bundle:
+    controller: 'App\Controller\Admin\UsersCrudController.php'
+    path: /admin
+
+app_language:
+    path: /{_locale}/language
+    controller: App\Controller\LanguageController::switch
+
+my_dashboard:
+    path: /dashboard
+    controller: App\Controller\DashboardController::index

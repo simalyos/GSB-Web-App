@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Commandes {% endblock %}
+
+{% block stylesheets %}
+    <style>
+        body {
+            background-color: #e3f2fd;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #container {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #C1D4E3;
+            border: 1px solid #NANNANNAN;
+            box-shadow: 0 0 10px #NANNANNAN;
+            padding: 10px;
+        }
+        table {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #C1D4E3;
+            border: 1px solid #NANNANNAN;
+            box-shadow: 0 0 10px #NANNANNAN;
+            padding: 10px;
+        }
+        h1 {
+            font-family: 'Verdana', sans-serif;
+            text-align: left;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+<h1 class="text-center my-5">Gestion de commandes</h1>
+<div class="example-wrapper">
+
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>N° de commande</th>
+                    <th>Client</th>
+                    <th>Date commande</th>
+                    <th>Montant</th>
+                    <th>Statut</th>
+                    <th>Utilisateur</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                    <tr>
+                        <td>{{ order.id_order }}</td>
+                        <td>{{ order.client_name }}</td>
+                        <td>{{ order.date_order ? order.date_order|date('Y-m-d') : '' }}</td>
+                        <td>{{ order.amount }}</td>
+                        <td>{{ order.statut }}</td>
+                        <td>{{ order.id_user_order }}</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="7">Aucune commande trouvée</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ path('app_home') }}" class="btn btn-primary my-3">Revenir à la page d'accueil</a>
+    </div>
+</div>
+
+{% endblock %}
